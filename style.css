@@ -519,6 +519,79 @@ color:#aaa;
 margin-bottom:20px;
 }
 
+/* MOBILE RESPONSIVO */
+@media (max-width: 900px) {
+  .header{
+    padding:18px 6%;
+  }
+
+  .hero{
+    padding:24px 16px 100px;
+  }
+
+  .hero h1{
+    font-size:clamp(2.5rem, 8vw, 3.6rem);
+  }
+
+  .hero p{
+    font-size:1rem;
+    max-width:100%;
+  }
+
+  .hero-actions{
+    gap:12px;
+  }
+
+  .main-box{
+    padding:28px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .card{
+    min-height:180px;
+  }
+
+  .card img{
+    max-height:180px;
+  }
+
+  section{
+    padding:0 6%;
+  }
+
+  .service,
+  .service.reverse{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    margin-bottom:60px;
+  }
+
+  .service img,
+  .text{
+    width:100%;
+  }
+
+  .text{
+    width:100%;
+  }
+
+  .service h2{
+    font-size:2rem;
+  }
+
+  .whatsapp{
+    right:16px;
+    bottom:16px;
+    padding:14px 18px;
+  }
+}
+
+
 ul{
 list-style:none;
 padding:0;

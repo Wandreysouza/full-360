@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full 360</title>
+<link rel="icon" type="image/png" href="imagens/full360.PNG">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-brand">
+        <img loading="lazy" class="header-logo" src="imagens/full360.PNG" alt="Full 360 Logo">
+    </div>
+    <a href="https://wa.me/5598984527466" target="_blank">Contato</a>
+</header>
+
+<div class="watermark">
+    <img loading="lazy" src="imagens/full360.PNG" alt="Full 360 Logo Background">
+</div>
+
+<section class="hero reveal">
+    <div class="hero-inner">
+        <h1 class="logo-title">Full 360</h1>
+        <p>Transformamos marcas em presenças digitais fortes.</p>
+        <div class="hero-actions">
+            <a class="hero-button" href="#fotografia">Ver serviços</a>
+            <a class="hero-secondary" href="https://wa.me/5598984527466" target="_blank">Fale conosco</a>
+        </div>
+    </div>
+    <div class="main-box reveal">
+        <div class="grid">
+
+            <div class="card" onclick="scrollToSection('fotografia')">
+                <img loading="lazy" src="imagens/fotografia.PNG" alt="Serviço de fotografia">
+            </div>
+
+            <div class="card" onclick="scrollToSection('trafego')">
+                <img loading="lazy" src="imagens/trafegopago (3).PNG" alt="Serviço de tráfego pago">
+            </div>
+
+            <div class="card" onclick="scrollToSection('social')">
+                <img loading="lazy" src="imagens/socialmidiaju.PNG" alt="Serviço de social media">
+            </div>
+
+            <div class="card" onclick="scrollToSection('outros')">
+                <img loading="lazy" src="imagens/outros.PNG" alt="Outros serviços Full 360">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="container">
+
+    <!-- FOTOGRAFIA -->
+    <div id="fotografia" class="service reveal">
+        <div class="gallery">
+            <img loading="lazy" src="imagens/cafe.jpg" alt="Foto de café">
+            <img loading="lazy" src="imagens//casamento.jpg" alt="Foto de casamento">
+            <img loading="lazy" src="imagens//casamento2.jpg" alt="Foto de casal no casamento">
+            <img loading="lazy" src="imagens//crossfit.jpg" alt="Foto de treino crossfit">
+            <img loading="lazy" src="imagens//hamburguer.jpeg" alt="Foto de hambúrguer">
+            <img loading="lazy" src="imagens//corrida.jpg" alt="Foto de corrida">
+        </div>
+
+        <div class="text">
+            <h2>Fotografia</h2>
+            <p class="subtitle">Imagens que conectam e vendem</p>
+
+            <h4>Como funciona?</h4>
+            <ul>
+                <li>Entendemos sua marca</li>
+                <li>Planejamos o ensaio</li>
+                <li>Criamos imagens estratégicas</li>
+            </ul>
+
+            <h4>Como trabalhamos?</h4>
+            <ul>
+                <li>Direção criativa</li>
+                <li>Produção profissional</li>
+                <li>Entrega otimizada</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TRÁFEGO -->
+    <div id="trafego" class="service reverse reveal">
+        <img loading="lazy" src="imagens/trafegopago.PNG" alt="Ilustração de tráfego pago">
+
+        <div class="text">
+            <h2>Tráfego Pago</h2>
+            <p class="subtitle">Campanhas focadas em resultado</p>
+
+            <h4>Como funciona?</h4>
+            <ul>
+                <li>Definição de objetivo</li>
+                <li>Segmentação de público</li>
+                <li>Execução de campanhas</li>
+            </ul>
+
+            <h4>Como trabalhamos?</h4>
+            <ul>
+                <li>Planejamento estratégico</li>
+                <li>Otimização diária</li>
+                <li>Escala com dados</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div id="social" class="service reveal">
+         <img loading="lazy" src="imagens/socialmidia2.PNG" alt="Serviço de social media">
+        <div class="text">
+            <h2>Social Media</h2>
+            <p class="subtitle">Perfis organizados e estratégicos</p>
+
+            <h4>Como funciona?</h4>
+            <ul>
+                <li>Análise de posicionamento</li>
+                <li>Identidade visual</li>
+                <li>Conteúdo estratégico</li>
+            </ul>
+
+            <h4>Como trabalhamos?</h4>
+            <ul>
+                <li>Planejamento mensal</li>
+                <li>Criação de posts</li>
+                <li>Gestão completa</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- OUTROS -->
+    <div id="outros" class="service reverse reveal">
+        <img loading="lazy" src="imagens/outroservicos.PNG" alt="Outros serviços oferecidos">
+
+        <div class="text">
+            <h2>Outros Serviços</h2>
+            <p class="subtitle">Soluções completas</p>
+
+            <ul>
+                <li>Eventos</li>
+                <li>Branding</li>
+                <li>Consultoria</li>
+                <li>Estratégias de negócio</li>
+                <li>Google Meu Negócio</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<a href="https://wa.me/5598984527466" class="whatsapp" target="_blank">
+Fale Conosco
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

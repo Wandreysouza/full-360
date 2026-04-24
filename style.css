@@ -831,6 +831,20 @@ min-height:170px;
 max-height:160px;
 }
 
+.service .text{
+text-align:center;
+}
+
+.service h2{
+font-size:2rem;
+text-align:center;
+}
+
+.service .subtitle{
+font-size:1rem;
+text-align:center;
+}
+
 }
 
 @media(max-width:700px){

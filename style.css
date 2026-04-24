@@ -976,6 +976,10 @@ padding:80px 6%;
 .whatsapp{
 bottom:14px;
 right:14px;
+left:auto;
+transform:none;
+max-width:calc(100% - 28px);
+white-space:nowrap;
 }
 
 }

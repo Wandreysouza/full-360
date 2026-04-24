@@ -1,6 +1,7 @@
 function initPage(){
     showCardsSequentially();
     revealOnScroll();
+    initOutrosAccordion();
 }
 
 document.addEventListener("DOMContentLoaded", initPage);
@@ -74,4 +75,57 @@ function showCardsSequentially(){
             card.classList.add("show");
         }, index * 300);
     });
+}
+
+function initOutrosAccordion(){
+    const triggers = document.querySelectorAll('.outros-trigger');
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const item = trigger.closest('.outros-item');
+            const panel = item.querySelector('.outros-panel');
+            const isActive = item.classList.contains('active');
+
+            document.querySelectorAll('.outros-item.active').forEach(other => {
+                if(other !== item){
+                    const otherPanel = other.querySelector('.outros-panel');
+                    other.classList.remove('active');
+                    otherPanel.style.maxHeight = null;
+                    otherPanel.classList.remove('typing');
+                    otherPanel.textContent = otherPanel.dataset.text;
+                    other.querySelector('.outros-trigger').setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            if(isActive){
+                item.classList.remove('active');
+                panel.style.maxHeight = null;
+                panel.classList.remove('typing');
+                panel.textContent = panel.dataset.text;
+                trigger.setAttribute('aria-expanded', 'false');
+            } else {
+                item.classList.add('active');
+                trigger.setAttribute('aria-expanded', 'true');
+                startTyping(panel);
+            }
+        });
+    });
+}
+
+function startTyping(panel){
+    const text = panel.dataset.text || '';
+    panel.textContent = '';
+    panel.classList.add('typing');
+    clearInterval(panel._typingTimer);
+
+    let index = 0;
+    panel._typingTimer = setInterval(() => {
+        panel.textContent += text.charAt(index);
+        index += 1;
+
+        if(index > text.length){
+            clearInterval(panel._typingTimer);
+            panel.classList.remove('typing');
+        }
+    }, 20);
 }
